@@ -610,3 +610,13 @@ article img {
     @apply border-accent cursor-pointer;
   }
 }
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  white-space: wrap;
+  word-wrap: break-word;
+}
