@@ -6,8 +6,7 @@ const config: SiteConfig = {
   // The name of your site, used in the title and for SEO.
   title: 'IWangJie',
   // The description of your site, used for SEO and RSS feed.
-  description:
-    '欢迎来到我的博客，记录一些笔记，分享我的生活。',
+  description: '欢迎来到我的博客，记录一些笔记，分享我的生活。',
   // The author of the site, used in the footer, SEO, and RSS feed.
   author: 'wangjie',
   // Keywords for SEO, used in the meta tags.
@@ -31,10 +30,6 @@ const config: SiteConfig = {
     {
       name: '首页',
       url: '/',
-    },
-    {
-      name: '关于我',
-      url: '/about',
     },
     {
       name: '归档',

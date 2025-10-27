@@ -28,6 +28,7 @@ const USER_AGENT = 'nodejs'
 // 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0',
 
 export const remarkGithubCard: Plugin<[], Root> = () => async (tree) => {
+  console.log(11111111, tree)
   tree.children = await Promise.all(
     tree.children.map(async (node): Promise<RootContent> => {
       if (!isNodeDirective(node)) return node
@@ -36,6 +37,7 @@ export const remarkGithubCard: Plugin<[], Root> = () => async (tree) => {
       if (node.type !== 'leafDirective' || node.name !== DIRECTIVE_NAME) return node
 
       let repoName = node.attributes?.repo ?? node.attributes?.user ?? null
+      console.log(repoName)
       if (!repoName) return node // Leave the directive as-is if no repo is provided
 
       repoName = repoName.endsWith('/') ? repoName.slice(0, -1) : repoName // Remove trailing slash
