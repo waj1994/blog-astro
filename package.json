@@ -9,7 +9,8 @@
     "postbuild": "pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^6.3.6",
@@ -53,11 +54,23 @@
     "unified": "^11.0.5"
   },
   "devDependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
     "@types/markdown-it": "^14.1.2",
     "@types/sanitize-html": "^2.16.0",
+    "husky": "^9.1.7",
+    "nano-staged": "^0.8.0",
     "pagefind": "^1.4.0",
     "prettier": "3.6.2",
     "prettier-plugin-astro": "0.14.1",
     "sass-embedded": "^1.92.1"
+  },
+  "nano-staged": {
+    "**/*.{yml,json,html,md,css,scss,js,jsx,mjs,astro}": [
+      "prettier --cache --write"
+    ],
+    "**/*.{ts,tsx}": [
+      "prettier --cache --parser=typescript --write"
+    ]
   }
 }
