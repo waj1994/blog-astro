@@ -1,13 +1,17 @@
 ---
 title: 'Showing Off Blog Features'
 published: 2025-07-20
-draft: false
+draft: true
 tags: ['astro', 'demo', 'markdown']
 toc: true
+description: 'A post about showing off blog features'
+series: 'Python Basics'
 coverImage:
   src: './cover.jpg'
   alt: 'A person with short, thick hair and prescription glasses sits at an organized workstation, using a magnification app to navigate a webpage. Their posture is proper and relaxed. On the desk: a computer, a mouse, a large desk lamp and a small notebook.'
 ---
+
+这是一篇实例的内容，作为草稿存在博客中方便查阅
 
 Since the post does not have a description in the frontmatter, the first paragraph is used.
 
