@@ -8,7 +8,6 @@ description: 详解http缓存，及node实现。
 ---
 
 [demo](https://github.com/wjie1994/test-demo/tree/master/http-cache)
-123
 
 ## 什么是缓存
 
