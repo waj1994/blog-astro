@@ -7,11 +7,9 @@ toc: true
 description: 日常不怎么见到的js语法，知识点记录。
 ---
 
-## localStorage 监听
+## storage 监听
 
-在做博客主题切换的适合，遇到一个问题，在新打开一个标签的文章详情页面上修改主题，在原页面上并没有变化。最开始想到的解决方案是用 SharedWorker 来实现，后面查了下资料可以用 Broadcast
-Channel API 或者 Storage
-API 来实现，因为我博客主题本身有存在 localStorage，所以用 Storage API 来实现。
+监听 storage 事件，当其他标签修改了 localStorage/sessionStorage 中的数据时，会触发该事件
 
 ```js
 // 添加监听
