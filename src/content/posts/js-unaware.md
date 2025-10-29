@@ -20,9 +20,9 @@ window.addEventListener('storage', ({ key, newValue }) => {
 })
 ```
 
-::tip
+:::tip
 注意：该监听方法只有在其他标签修改才会触发
-::
+:::
 
 详细查看[mdn](https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API#%E7%A4%BA%E4%BE%8B)
 
