@@ -20,7 +20,9 @@ window.addEventListener('storage', ({ key, newValue }) => {
 })
 ```
 
-    注意：该监听方法只有在其他标签修改才会触发
+::tip
+注意：该监听方法只有在其他标签修改才会触发
+::
 
 详细查看[mdn](https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API#%E7%A4%BA%E4%BE%8B)
 
@@ -33,8 +35,6 @@ Uncaught SyntaxError: Failed to execute 'querySelector' on 'Document': '#1_ul' i
 ```
 
 意思是在使用`querySelector`的时候`#1_ul`不是一个有效的选择器。
-
-what？
 
 这不就是一个 id 选择器吗？然后我换成`getElementById`就没问题
 
